@@ -58,7 +58,6 @@ header {
 .dashboard {
   height: calc(100vh - 184px);
   position: relative;
-  overflow: hidden;
 }
 
 .transactions {
@@ -108,6 +107,7 @@ header {
   grid-template-columns: 98%;
   row-gap: 7px;
   justify-content: center;
+  transition: all 0.4s;
 }
 
 .dashboard input {
@@ -168,7 +168,7 @@ header {
 }
 
 .dashboard .remove-form {
-  bottom: -30%;
+  display: none;
 }
 
 .remove-item {
