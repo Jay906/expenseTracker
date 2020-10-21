@@ -8,7 +8,7 @@ function Form({toggle, handleToggle, handleSubmit}) {
         e.preventDefault();
         const newItem = {
             title: newTitle,
-            amount: parseFloat(newAmount),
+            amount: parseFloat(newAmount).toFixed(1),
         };
         handleSubmit(newItem);
         setNewTitle("");
